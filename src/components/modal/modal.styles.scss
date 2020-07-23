@@ -1,0 +1,141 @@
+.modal {
+    display: flex;
+    flex-direction: column;
+    background-color: #d8d8d8;
+    width: 100%;
+    position: fixed;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    .modal-content {
+        background-color: white;
+        border-radius: 8px;
+        padding: 50px;
+        max-width: 800px;
+        width: 100%;
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+        button {
+            &.btn-close {
+                border: none;
+                outline: none;
+                background: transparent;
+                text-decoration: none;
+                color: #5fb962;
+                width: fit-content;
+                align-self: flex-end;
+                cursor: pointer;
+            }
+        }
+        display: flex;
+        flex-direction: column;
+    }
+    form {
+        width: auto;
+        margin: 32px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        input,
+        label,
+        textarea {
+            margin-bottom: 8px;
+        }
+        textarea,
+        input {
+            font-family: "Arial";
+            padding: 8px;
+            margin: 8px;
+            resize: none;
+            outline: none;
+            border: none;
+            border-radius: 8px;
+            border: 1px solid #e8eae9;
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-family: "Arial";
+            margin: 8px;
+        }
+        button {
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #aaaaaa;
+            color: #37a467;
+            outline: none;
+            background: #f2f7f4;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+            &:hover {
+                background: #37a467;
+                color: white;
+                transition: 0.3s all ease-in-out;
+            }
+        }
+    }
+    .btn-green {
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #aaaaaa;
+        color: #37a467;
+        outline: none;
+        background: #f2f7f4;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.3s all ease-in-out;
+        &:hover {
+            background: #37a467;
+            color: white;
+            transition: 0.3s all ease-in-out;
+        }
+    }
+}
+
+.fetch-button {
+    margin-top: 16px;
+    border: 1px solid #aaaaaa;
+    color: #37a467;
+    outline: none;
+    background: #f2f7f4;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    &:hover {
+        background: #37a467;
+        color: white;
+        transition: 0.3s all ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .modal {
+        width: 100%;
+        max-width: 100%;
+        top: 0;
+        .modal-content {
+            width: 100%;
+            max-width: 80%;
+            form {
+                width: auto;
+                textarea {
+                    min-height: 100px;
+                }
+            }
+        }
+    }
+}

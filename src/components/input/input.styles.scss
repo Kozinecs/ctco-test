@@ -1,0 +1,35 @@
+.our-input {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    label {
+        font-size: 0.8rem;
+        color: #606060;
+        margin-bottom: 4px;
+    }
+    input {
+        border-radius: 6px;
+        border: 1px solid #e4e4e4;
+        padding: 12px 8px;
+        color: #303030;
+        font-size: 1.2rem;
+        width: -webkit-fill-available;
+    }
+    .input-field-sign {
+        position: relative;
+        .sign {
+            position: absolute;
+            display: block;
+            transform: translate(0, -50%);
+            top: 50%;
+            pointer-events: none;
+            width: 25px;
+            text-align: center;
+            font-style: normal;
+        }
+        input {
+            padding-left: 25px;
+            padding-right: 0;
+        }
+    }
+}
